@@ -1,24 +1,110 @@
 <!DOCTYPE html>
 <style>
     .containerheader {
-        display: grid;
-        grid-template-columns: 100px 100px 100px 150px;
+        display: flex;
+        margin: 0 5px 0 0;
+        justify-content: right;
+        padding: 5px; 
+    }
+    p{
+        font-size: 15px;
+        padding: 16px;
+        display: flex;
+    }
+    .button{
+        height: auto;
+        background-color: #4285F4;
+        color: white;
+        padding: auto;
+    }
+    .botones{
+        display:inline;
+        padding-top: 25px;   
+    }
+    .content{
+        display:flex;
+        flex-direction: column;
+        padding-top:15%;
+        align-items: center;
+        flex:1;
+    }
+    img{
+        width:300px;
+    }
+    input{
+        width:500px;
+        height: 35px;
+        border-radius: 250px;
+        border: solid #d9d9d9 2px;
+    }
+    button{
+        background-color: #efefef;
+        border: none;
+        padding: 10px;
+    }
+    .footer{
+    position: fixed;
+    width: 100%;
+    bottom:40px;
+    height:60px;
+    background-color:#d9d9d9;
+    border-color: #efefef;
+    }
+    ul {
+        list-style-type:none;
+        padding: 0;    
+        margin:0;
+        background-color: #d9d9d9;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;    
+    }
+    li{
+        float: left;
+    }
+    li a {
+        display: block;
+        text-align: center;
+        color: black;
+        padding: 14px 16px;
+    }
+    body{
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
     }
 </style>
 <html>
-        <header class=containerheader>
-           <h2> Gmail</h2>
-           <h2>Imagenes</h2>
-           <a href="#"<img src="https://www.google.com.pr/intl/es-419/about/products?tab=wh" alt="menu"></a>
-            <button type = "submit">Iniciar sesion </button>
-        </header>
     <body>
-
-        <a href="#"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo"></a><br>
-        <input type = "text">
-        <button type="submit">Buscar con Google</button>
-        <button type="submit">Me siento con suerte</button>
-        <h6>Ofrecido por Google en: <a href="#">English</a></h6>
-        
+        <div class="containerheader">
+            <p> Gmail</p>
+            <p>Imagenes</p>
+            <p class="button">Iniciar sesion</p>
+        </div> 
+        <div class="content">
+            <a href="#"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo"></a>
+            <br>
+            <input type = "text">
+            <div class="botones">
+                <button type="submit">Buscar con Google</button>
+                <button type="submit">Me siento con suerte</button>
+            </div>
+            <h6>Ofrecido por Google en: <a href="#">English</a></h6>
+        </div>  
+        <div class="footer">
+            <p>Puerto Rico</p>
+            <div class="footer2">
+                <ul>
+                    <li><a href="#publicidad">Publicidad</a></li>
+                    <li><a href="#negocios">Negocios</a></li>
+                    <li><a href="#sobre">Sobre Google</a></li>
+                    <li><a href="#comoFunciona">Como funciona la Busqueda</a></li>
+                    <li style="float:right"><a href="#preferencias">Preferencias</a></li>
+                    <li style="float:right"><a href="#condiciones">Condiciones</a></li>
+                    <li style="float:right"><a href="#privacidad">Privacidad</a></li>
+                </ul> 
+            </div>
+        </div>  
     </body>
  </html>
